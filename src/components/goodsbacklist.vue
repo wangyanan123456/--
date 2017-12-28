@@ -46,6 +46,8 @@
 
       
    </ul>
+   <div class="reason">退货理由</div>
+   <textarea  rows='5' cols='57' placeholder='请输入退货理由'></textarea>
    
    
   </div>
@@ -140,5 +142,18 @@
     color: #fff;
     text-align: center;
     line-height: 0.38rem;
+  }
+  .reason{
+    margin-left: 0.31rem;
+    font-size: 0.22rem;
+    color: #333;
+    margin-top: 0.23rem;
+  }
+  textarea{
+    border:none;
+    margin-top: 0.23rem;
+    padding-left: 0.31rem;
+    font-size: 0.19rem;
+    color: #B2B2B2;
   }
 </style>
