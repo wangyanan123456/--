@@ -34,7 +34,7 @@
       position: fixed;
       bottom: 0rem;
       font-size: 0.2rem;
-      background: red;
+      background: #fff;
       height: 0.7rem; 
       padding-top: 0.07rem;
       width:100%;     

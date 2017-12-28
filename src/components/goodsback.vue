@@ -3,23 +3,23 @@
    <!-- <h1 @click='toQiangdan'>这是抢单页面</h1> -->
   
     <ul>
-     <li @click.stop="naviTo({path: '/qiangdan2'})">
+     <li @click.stop="naviTo({path: '/goodsbacklist'})">
         <div>
           <img src="../assets/img/qd.png">
         </div>
-        <div>抢单</div>
+        <div>小麦竞园店</div>
       </li>
-      <li @click.stop="naviTo({path: '/goodsback'})">
+      <li>
         <div>
           <img src="../assets/img/hs.png">
         </div>
-        <div>商品回收</div>
+        <div>花花便利店</div>
       </li>
        <li>
         <div>
           <img src="../assets/img/th.png">
         </div>
-        <div>商品退货</div>
+        <div>解忧杂货铺</div>
       </li>
       
     </ul>
@@ -28,7 +28,7 @@
 </template>
 <script type="text/javascript">
   export default {
-    name: 'JobTai',
+    name: 'GoodsBack',
     data:function(){
     	return{
 
