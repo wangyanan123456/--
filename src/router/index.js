@@ -20,6 +20,10 @@ export default new Router({
       ]
     },
     {
+      path: '/qiangdan2',
+      component: QiangDan,
+    },
+    {
       path:'/bill',
       component: Bill,
       
