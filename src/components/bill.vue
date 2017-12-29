@@ -1,10 +1,15 @@
 <template>
   <div class="head">
    <ul class="title">
-   		<li @click='change()' :class="{'bottom':todayActive}">配送中</li>
-   		<li @click='change2()' :class="{'bottom':!todayActive}">已完成</li>
+   		<li @click='change' >
+   			<div :class="{'bottom':todayActive}">配送中</div>
+   		</li>
+   		<li @click='change2' >
+   			<div :class="{'bottom':todayActive2}">已完成</div>
+   		</li>
+   		<!-- <li @click='change2' :class="{'bottom':todayActive2}"></li> -->
    </ul>
-   <ul class="content">
+   <ul class="content" v-if='todayActive'>
      <li >
        <div class="felx">
          <div class="left">
@@ -47,6 +52,49 @@
        <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
      </li>
    </ul>
+   <ul class="content" v-if='todayActive2'>
+     <li >
+       <div class="felx">
+         <div class="left">
+           <div class="zhandian">71122(竞园店)</div>
+           <div class="palce">竞园艺术中心32C</div>
+           <div class="palce">宋先生 <span>18831241245</span></div>
+         </div>
+         <div class="right2">
+           <div></div>
+         </div>
+       </div>
+       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+     </li>
+
+      <li>
+       <div class="felx">
+         <div class="left">
+           <div class="zhandian">71133(竞园店)</div>
+           <div class="palce">竞园艺术中心32C</div>
+           <div class="palce">宋先生 <span>18831241245</span></div>
+         </div>
+         <div class="right2">
+           <div></div>
+         </div>
+       </div>
+       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+     </li>
+
+      <li>
+       <div class="felx">
+         <div class="left">
+           <div class="zhandian">71155(竞园店)</div>
+           <div class="palce">竞园艺术中心32C</div>
+           <div class="palce">宋先生 <span>18831241245</span></div>
+         </div>
+         <div class="right2">
+           <div></div>
+         </div>
+       </div>
+       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+     </li>
+   </ul>
   </div>
 </template>
 <script type="text/javascript">
@@ -55,18 +103,21 @@
     data:function(){
     	return{
     		todayActive:true,
+    		todayActive2:false
     		
     	}
     },
     methods:{
-    	change(){
+    	change:function(){
 			
 			this.todayActive =true
+			this.todayActive2 = false
 			
 		},
-		change2(){
+		change2:function(){
 			console.log(8)
 			this.todayActive =false
+			this.todayActive2 =true
 		}
     }
     
@@ -95,14 +146,18 @@
    .title li{
    	height: 0.35rem;
    	border-right:1px solid #fff;
-   	line-height: 0.35rem;
+   	line-height: 0.41rem;
    	width:2.91rem;
    	font-size: 0.28rem;
    	color:#fff;
    	text-align: center;
    }
+   .title div{
+   		width:0.84rem;
+   		margin: 0 auto;
+   }
    .title li:last-child{
-   	border:none;
+   	border-right:none;
    }
    .content{
     margin-left: 0.31rem;
@@ -146,6 +201,18 @@
     margin-left: 0.6rem;
     margin-top: 0.25rem;
   }
+  .right2 div{
+    width:0.94rem;
+    height: 0.94rem;
+    background: url('../assets/img/songed.png') no-repeat;
+    background-size: 100% 100%;
+    line-height: 0.53rem;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    margin-left: 0.6rem;
+    margin-top: 0.25rem;
+  }
   .down{
     padding-left: 0.23rem;
     padding-bottom: 0.22rem;
@@ -163,8 +230,8 @@
     margin:0 auto;
   }
   .bottom{
-	color: red;
-	border-bottom: 3px solid red;
+	border-bottom: 1px solid #fff;
 	}
+	
  
 </style>
