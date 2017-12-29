@@ -51,6 +51,10 @@
         this.$router.push({
           path, query
         })
+      },
+      backto:function() {
+        console.log(999)
+       window.location.href='../html/goodsback2.html'; 
       }
     }
    
