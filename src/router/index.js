@@ -13,13 +13,7 @@ export default new Router({
  routes:[
     {
       path:'/',
-      component: JobTai,
-      children:[
-        {
-          path:'/qiangdan',
-          component:QiangDan,
-        }
-      ]
+      component: JobTai
     },
     {
       path: '/qiangdan2',

@@ -1,10 +1,28 @@
 <template>
   <div class="head">
+  <div class="backto" @click.stop="naviTo({path: '/'})">
+    <img src="../assets/img/backto.png">
+    <div>返回</div>
+  </div>
    <ul>
-     <li>
+     <li v-if='show'>
        <div class="felx">
          <div class="left">
-           <div class="zhandian">711(竞园店)</div>
+           <div class="zhandian">71122(竞园店)</div>
+           <div class="palce">竞园艺术中心32C</div>
+           <div class="palce">宋先生 <span>18831241245</span></div>
+         </div>
+         <div class="right">
+           <div @click='qiang'>抢单</div>
+         </div>
+       </div>
+       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+     </li>
+
+      <li>
+       <div class="felx">
+         <div class="left">
+           <div class="zhandian">71133(竞园店)</div>
            <div class="palce">竞园艺术中心32C</div>
            <div class="palce">宋先生 <span>18831241245</span></div>
          </div>
@@ -18,21 +36,7 @@
       <li>
        <div class="felx">
          <div class="left">
-           <div class="zhandian">711(竞园店)</div>
-           <div class="palce">竞园艺术中心32C</div>
-           <div class="palce">宋先生 <span>18831241245</span></div>
-         </div>
-         <div class="right">
-           <div>抢单</div>
-         </div>
-       </div>
-       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
-     </li>
-
-      <li>
-       <div class="felx">
-         <div class="left">
-           <div class="zhandian">711(竞园店)</div>
+           <div class="zhandian">71155(竞园店)</div>
            <div class="palce">竞园艺术中心32C</div>
            <div class="palce">宋先生 <span>18831241245</span></div>
          </div>
@@ -48,6 +52,7 @@
        <img src='../assets/img/pull.png'>
      </div>
      <p>下拉加载更多</p>
+     <div  class="toast" v-if='apper'>恭喜你抢单成功</div>
    </div>
    
   </div>
@@ -57,11 +62,27 @@
     name: '	QiangDan',
      data:function(){
     	return{
-
+          show:true,
+          apper:false
     	}
     },
     methods:{
-    	
+      
+      naviTo({path, query}) {
+        this.$router.push({
+          path, query
+        })
+      },
+      qiang:function(){
+          this.show = false;
+           this.apper = true;
+           var that = this;
+          setTimeout(function(){
+              that.apper = false
+          },1000)
+      }
+     
+     
     }
    
   }
@@ -74,6 +95,25 @@
     padding-top: 1.23rem;
     background: #EFEFF4;
     text-align: left;
+   }
+   .backto{
+    position: fixed;
+    top:0.25rem;
+    z-index: 1000;
+    color: #fff;
+    display: flex;
+    margin-left: 0.16rem;
+   }
+   .backto img{
+    width:0.16rem;
+    height: 0.28rem;
+    background-size: 100% 100%;
+    margin-top: 0.24rem;
+    margin-right: 0.08rem;
+   }
+   .backto div{
+    margin-top: 0.25rem;
+    font-size: 0.25rem;
    }
    ul{
     margin-left: 0.31rem;
@@ -145,5 +185,20 @@
     color: #008CFF;
     text-align: center;
    margin-top: 0.22rem;
+   }
+   .toast{
+    width:3.75rem;
+    height:0.94rem;
+    background:#000;
+    opacity: 0.7;
+    color: #fff;
+    text-align: center;
+    line-height: 0.94rem;
+    font-size: 0.27rem;
+    border-radius: 0.08rem;
+    position: fixed;
+    top:3.59rem;
+    z-index: 1000;
+    left: 1.2rem;
    }
 </style>

@@ -35,12 +35,7 @@
     	}
     },
     methods:{
-    	toQiangdan:function(){
-    		this.$router.push({
-					path: 'qiangdan',
-					
-				})
-      },
+    	
       naviTo({path, query}) {
         this.$router.push({
           path, query
