@@ -53,6 +53,7 @@
    <div class="reason">退货理由</div>
    <textarea  rows='5' cols='57' v-model='messg' placeholder='请输入退货原因'></textarea>
    <div class="submit" @click='submit'>提交</div>
+   <div  class="toast" v-if='apper'>{{text}}</div>
    
   </div>
 </template>
@@ -63,7 +64,9 @@
     	return{
           num:'',
           messg:'',
-          number:10
+          number:10,
+          apper:false,
+          text:''
     	}
      
     },
@@ -88,7 +91,20 @@
         submit:function(){
           console.log(this.messg.length)
           if(this.messg.length<20 || this.messg.length>200 || this.num>this.number){
-            console.log('不可以提交')
+             this.apper = true;
+             this.text='提交失败'
+             var that = this;
+            setTimeout(function(){
+                that.apper = false
+            },1000)
+          }else{
+            console.log(90)
+            this.text='提交成功'
+             var that = this;
+             this.apper = true;
+            setTimeout(function(){
+                that.apper = false
+            },1000)
           }
 
           
@@ -212,4 +228,19 @@
     font-size: 0.28rem;
     margin:  0 auto;
   }
+  .toast{
+    width:3.75rem;
+    height:0.94rem;
+    background:#000;
+    opacity: 0.7;
+    color: #fff;
+    text-align: center;
+    line-height: 0.94rem;
+    font-size: 0.27rem;
+    border-radius: 0.08rem;
+    position: fixed;
+    top:3.59rem;
+    z-index: 1000;
+    left: 1.2rem;
+   }
 </style>

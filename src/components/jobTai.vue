@@ -15,7 +15,7 @@
         </div>
         <div>商品回收</div>
       </li>
-       <li>
+       <li @click.stop="naviTo({path: '/goodstuihuo'})">
         <div>
           <img src="../assets/img/th.png">
         </div>
@@ -67,5 +67,5 @@
     margin-left: 0.23rem;
     margin-right: 0.14rem;
    }
- 
+
 </style>

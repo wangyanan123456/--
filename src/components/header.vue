@@ -26,6 +26,7 @@
 	font-size:0.3rem;
 	color: #fff;
 	background: -webkit-linear-gradient(top, #2C2D31, #101013);
+	opacity: 0.9;
 }
 .hui{
 	width:100%;
