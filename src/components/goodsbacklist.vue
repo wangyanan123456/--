@@ -62,7 +62,7 @@
     name: 'GoodsBackList',
      data:function(){
     	return{
-          num:'',
+          num:0,
           messg:'',
           number:10,
           apper:false,

@@ -201,4 +201,5 @@
     z-index: 1000;
     left: 1.2rem;
    }
+   
 </style>
