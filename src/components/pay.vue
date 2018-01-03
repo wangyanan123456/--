@@ -7,8 +7,13 @@
    <div class="money" v-if='apper'>
    		<div class="paying">现金支付</div>
    		<div class="bottom">
-   			<input type="number" placeholder='请输入金额' v-model = 'rmb'>
-   			<div class="sure" @click='sure'>确定</div>
+      <div class="speak">
+        ￥<input type="number" placeholder='请输入金额' v-model = 'rmb'>
+      </div>
+        <div style="display:flex">
+          <div class="esc" >取消</div><div class="sure" @click='sure'>确定</div>
+        </div>
+   			
    		</div>
    	</div>
  
@@ -284,25 +289,38 @@
    	border-radius: 0 0 0.11rem 0.11rem;
    }
    .bottom input{
-   	width:2.25rem;
+   	width:2rem;
    	height: 0.69rem;
    	border:none;
-   	border:1px solid #e5e5e5;
    	font-size: 0.27rem;
    	margin-top: 0.41rem;
-   	margin-left: 0.81rem;
-   	text-align: center;
+    /*border:1px solid red;*/
    }
    .sure{
-   	width: 3.59rem;
+   	width: 1.7rem;
    	height: 0.67rem;
    	margin: 0.38rem auto;
    	background: #5B8CFF;
-	font-size: 0.34rem;
-	color: #fff;
-	text-align: center;
-	line-height: 0.67rem;
-	border-radius: 0.06rem;
+  	font-size: 0.34rem;
+  	color: #fff;
+  	text-align: center;
+  	line-height: 0.67rem;
+  	border-radius: 0.06rem;
+   }
+   .esc{
+    width: 1.7rem;
+    height: 0.67rem;
+    margin: 0.38rem auto;
+    background: #E5E5E5;
+    font-size: 0.38rem;
+    color: #999;
+    text-align: center;
+    line-height: 0.67rem;
+    border-radius: 0.06rem;
+   }
+   .speak{
+    width:70%;
+    padding-left: 30%;
    }
 
 </style>

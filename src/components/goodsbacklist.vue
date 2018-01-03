@@ -89,7 +89,7 @@
           })
         },
         submit:function(){
-          console.log(this.messg.length)
+          console.log(this.num)
           if(this.messg.length<20 || this.messg.length>200 || this.num>this.number){
              this.apper = true;
              this.text='提交失败'
@@ -216,6 +216,7 @@
     font-size: 0.19rem;
     color: #B2B2B2;
     padding-top: 0.2rem;
+     resize : none;
   }
   .submit{
     width:1.56rem;
