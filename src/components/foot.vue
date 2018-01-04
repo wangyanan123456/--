@@ -3,13 +3,16 @@
     <ul>
       <li >
         <router-link to = '/'>
+        <!-- <img v-attr="src: sex=='male'?'images/male.png':'images/female.png'"> -->
+          <!-- <img class="img1"  v-attr="src: $route.path =='/'?'../assets/img/foot11.png':'../assets/img/foot1.png'"> -->
           <div  class="img1" :style = "{background: $route.path === '/' ? '../assets/img/foot11.png' : '../assets/img/foot1.png'}"></div>
+          
           <p :style="{color: $route.path === '/' ? 'red' : '#999'}">工作台</p>
         </router-link>
       </li>
       <li >
         <router-link to="/bill">
-        <div  class="img2" :style = "{background: $route.path === '/bill' ? '../assets/img/foot22.png' : ''}"></div>
+        <div  class="img2" ></div>
           <p :style="{color: $route.path === '/bill' ? 'red' : '#999'}">订单</p>
         </router-link>
       </li>
@@ -38,7 +41,6 @@
       height: 0.7rem; 
       padding-top: 0.07rem;
       width:100%;     
-      /*line-height: 0.6rem;*/
     }
   .footer ul{
     display: flex;
@@ -73,6 +75,9 @@
     width:0.34rem;
     margin: 0 auto;
 
+  }
+  .img1 .router-link-active{
+    background: url('../assets/img/foot11.png');
   }
   
  

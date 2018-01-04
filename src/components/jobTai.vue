@@ -1,28 +1,6 @@
 <template>
   <div class="head">
-   <!-- <h1 @click='toQiangdan'>这是抢单页面</h1> -->
-  
-   <!--  <ul>
-     <li @click.stop="naviTo({path: '/qiangdan2'})">
-        <div>
-          <img src="../assets/img/qd.png">
-        </div>
-        <div>抢单</div>
-      </li>
-      <li @click.stop="naviTo({path: '/goodsback'})">
-        <div>
-          <img src="../assets/img/hs.png">
-        </div>
-        <div>商品退货</div>
-      </li>
-       <li @click.stop="naviTo({path: '/goodstuihuo'})">
-        <div>
-          <img src="../assets/img/th.png">
-        </div>
-        <div>商品回收</div>
-      </li>
-      
-    </ul> -->
+   
     <div class="box">
      
      <ul>
