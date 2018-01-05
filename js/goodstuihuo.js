@@ -27,6 +27,19 @@ $(document).ready(function(){
     })
    })
 
+   $('input').each(function(){
+      $(this).focus(function(){
+        $(this).val("")
+      });
+       $(this).blur(function(){
+        if($(this).val()<=0){
+          $(this).val("0")
+        }else{
+          $(this).val(parseInt($(this).val()))
+        }
+      });  
+   })
+
 
   $('.submit').click(function(){
      var $textarea  = $('.textarea').val()

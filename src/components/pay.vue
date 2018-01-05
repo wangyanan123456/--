@@ -84,7 +84,6 @@
 	        
 	     </div>
 	     <div class="show">
-	     	 <!-- <div>本次应付</div> -->
 	     </div>
         
       </li>
@@ -118,7 +117,7 @@ import { mapState } from 'vuex'
     		this.show = true
     	},
     	money:function(){
-
+    		this.rmb = ''
     		this.apper = true
     	},
     	sure:function(){
