@@ -4,10 +4,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
    state:{
-    count:0
+    count:'工作台'
   },
   mutations:{
-    increment:state => state.count ++,
-    decrement:state => state.count --,
+   
   }
 })

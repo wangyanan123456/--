@@ -1,12 +1,18 @@
 <template>
   <div class="head">
-  	<div class="title">工作台</div>
+  	<div class="title">{{count}}</div>
   	<div class="hui"></div>
   </div>
 </template>
 <script type="text/javascript">
+import { mapState } from 'vuex'
   export default {
-    name: 'Head'
+    name: 'Head',
+     computed:{
+        count(){
+            return this.$store.state.count
+        },
+    },
   }
 </script>
 

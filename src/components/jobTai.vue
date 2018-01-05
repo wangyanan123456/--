@@ -26,16 +26,21 @@
       
     
   </div>
+      
     <router-view />
   </div>
 </template>
 <script type="text/javascript">
+import { mapState } from 'vuex'
   export default {
     name: 'JobTai',
     data:function(){
     	return{
-
+        tx:'抢单'
     	}
+    },
+    mounted(){
+      this.$store.state.count = '工作台 '
     },
     methods:{
     	

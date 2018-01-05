@@ -41,12 +41,16 @@
   </div>
 </template>
 <script type="text/javascript">
+import { mapState } from 'vuex'
   export default {
     name: 'GoodsTuiHuo',
     data:function(){
     	return{
 
     	}
+    },
+     mounted(){
+      this.$store.state.count = '商品回收 '
     },
     methods:{
     	

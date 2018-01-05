@@ -58,6 +58,7 @@
   </div>
 </template>
 <script type="text/javascript">
+import { mapState } from 'vuex'
   export default {
     name: '	Qiang',
      data:function(){
@@ -65,6 +66,9 @@
           show:true,
           apper:false
     	}
+    },
+    mounted(){
+      this.$store.state.count = '抢单 '
     },
     methods:{
       
