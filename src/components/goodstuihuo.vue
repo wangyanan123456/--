@@ -1,33 +1,41 @@
 <template>
   <div class="head">
    <!-- <h1 @click='toQiangdan'>这是抢单页面</h1> -->
-  <div class="backto" @click.stop="naviTo({path: '/'})">
+ <div class="backto" @click.stop="naviTo({path: '/'})">
     <img src="../assets/img/backto.png">
     <div>返回</div>
   </div>
     <ul>
-     <li @click.stop="naviTo({path: '/tuihuo'})">
+     <li >
+     <a href="../../html/goodshuishou.html">
         <div>
           <img src="../assets/img/qd.png">
         </div>
-        <div class="zhandian">小麦竞园店</div>
+        <div class="zhandian">小麦竞园店4</div>
         <div class="detail">详情></div>
+     </a>
+       
       </li>
-      <li>
+      <li >
+     <a href="../../html/goodshuishou.html">
         <div>
-          <img src="../assets/img/hs.png">
+          <img src="../assets/img/qd.png">
         </div>
-        <div class="zhandian">花花便利店</div>
+        <div class="zhandian">小麦竞园店5</div>
         <div class="detail">详情></div>
+     </a>
+       
       </li>
-       <li>
+      <li >
+     <a href="../../html/goodshuishou.html">
         <div>
-          <img src="../assets/img/th.png">
+          <img src="../assets/img/qd.png">
         </div>
-        <div class="zhandian">解忧杂货铺</div>
+        <div class="zhandian">小麦竞园店6</div>
         <div class="detail">详情></div>
+     </a>
+       
       </li>
-      
     </ul>
     <router-view />
   </div>
@@ -41,21 +49,12 @@
     	}
     },
     methods:{
-    	toQiangdan:function(){
-    		this.$router.push({
-					path: 'qiangdan',
-					
-				})
-      },
+    	
       naviTo({path, query}) {
         this.$router.push({
           path, query
         })
       },
-      backto:function() {
-        console.log(999)
-       window.location.href='../html/goodsback2.html'; 
-      }
     }
    
   }
@@ -66,7 +65,7 @@
    	padding-top: 1.23rem;
    	/*height: 80vh;*/
    }
-   li{
+   li a{
     display: flex;
     width:100%;
     height: 0.92rem;
@@ -92,7 +91,7 @@
    }
    .backto{
     position: fixed;
-    top:0.25rem;
+    top:0.13rem;
     z-index: 1000;
     color: #fff;
     display: flex;

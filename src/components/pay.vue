@@ -11,7 +11,7 @@
         ￥<input type="number" placeholder='请输入金额' v-model = 'rmb'>
       </div>
         <div style="display:flex">
-          <div class="esc" >取消</div><div class="sure" @click='sure'>确定</div>
+          <div class="esc" @click='esc'>取消</div><div class="sure" @click='sure'>确定</div>
         </div>
    			
    		</div>
@@ -96,7 +96,7 @@
 </template>
 <script type="text/javascript">
   export default {
-    name: 'GoodsBack',
+    name: 'Pay',
     data:function(){
     	return{
     		show:true,
@@ -139,7 +139,10 @@
 	          },1000)
     		}
     		
-    	}
+    	},
+      esc:function(){
+          this.apper = false
+      }
     
     }
    

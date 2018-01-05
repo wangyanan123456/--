@@ -1,32 +1,39 @@
 <template>
-  <div class="head">
+  <div class="head" >
    <!-- <h1 @click='toQiangdan'>这是抢单页面</h1> -->
   <div class="backto" @click.stop="naviTo({path: '/'})">
     <img src="../assets/img/backto.png">
     <div>返回</div>
   </div>
     <ul>
-     <li @click.stop="naviTo({path: '/goodsbacklist'})">
-        <div>
+      <li>
+        <a href="../../html/goodstuihuo.html">
+           <div>
           <img src="../assets/img/qd.png">
         </div>
-        <div class="zhandian">小麦竞园店</div>
+        <div class="zhandian">小麦竞园店1</div>
         <div class="detail">详情></div>
+        </a>
       </li>
       <li>
-        <div>
-          <img src="../assets/img/hs.png">
+        <a href="../../html/goodstuihuo.html">
+           <div>
+          <img src="../assets/img/qd.png">
         </div>
-        <div class="zhandian">花花便利店</div>
+        <div class="zhandian">小麦竞园店2</div>
         <div class="detail">详情></div>
+        </a>
       </li>
-       <li>
-        <div>
-          <img src="../assets/img/th.png">
+      <li>
+        <a href="../../html/goodstuihuo.html">
+           <div>
+          <img src="../assets/img/qd.png">
         </div>
-        <div class="zhandian">解忧杂货铺</div>
+        <div class="zhandian">小麦竞园店3</div>
         <div class="detail">详情></div>
+        </a>
       </li>
+    
       
     </ul>
     <router-view />
@@ -66,7 +73,7 @@
    	padding-top: 1.23rem;
    	/*height: 80vh;*/
    }
-   li{
+   li a{
     display: flex;
     width:100%;
     height: 0.92rem;
@@ -92,7 +99,7 @@
    }
    .backto{
     position: fixed;
-    top:0.25rem;
+    top:0.15rem;
     z-index: 1000;
     color: #fff;
     display: flex;

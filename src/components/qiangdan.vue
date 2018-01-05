@@ -59,7 +59,7 @@
 </template>
 <script type="text/javascript">
   export default {
-    name: '	QiangDan',
+    name: '	Qiang',
      data:function(){
     	return{
           show:true,

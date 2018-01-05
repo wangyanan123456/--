@@ -16,9 +16,9 @@
         </div>
         <div>商品退货</div>
       </li>
-       <li class="two">
+       <li class="two" @click.stop="naviTo({path: '/goodstuihuo'})">
         <div class="img">
-          <img src="../assets/img/pandian.png" @click.stop="naviTo({path: '/goodstuihuo'})">
+          <img src="../assets/img/pandian.png" >
         </div>
         <div>商品盘点</div>
       </li>
