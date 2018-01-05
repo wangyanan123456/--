@@ -95,6 +95,7 @@
   </div>
 </template>
 <script type="text/javascript">
+import { mapState } from 'vuex'
   export default {
     name: 'Pay',
     data:function(){
@@ -105,6 +106,9 @@
     		text:'',
     		waring:false
     	}
+    },
+    mounted(){
+      this.$store.state.count = '付款 '
     },
     methods:{
     	turn:function(){

@@ -29,6 +29,8 @@ $(document).ready(function(){
 
 
   $('.submit').click(function(){
+     var $textarea  = $('.textarea').val()
+
     var $val = $('.down')
     var count=0;
     $val.each(function(index,ele){
@@ -40,7 +42,7 @@ $(document).ready(function(){
         count++   
       }
     })
-    if(count>0){
+    if(count>0 || $textarea.length<3 || $textarea.length>200){
       $('.toast').text('提交失败')
       toast()
     }else{

@@ -27,7 +27,7 @@ $(document).ready(function(){
     })
    })
 
-
+   
   $('.submit').click(function(){
     var $val = $('.down')
     var count=0;
