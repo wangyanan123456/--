@@ -27,6 +27,7 @@
     background: #EFEFF4;
     text-align: left;
     padding-top: 1.23rem;
+    min-height: 88%;
    }
     .backto{
     position: fixed;
@@ -54,6 +55,7 @@
    li{
     width:100%;
     background: #fff;
+    /*border:1px solid red;*/
    }
    .left{
     border-bottom:1px solid #999;
@@ -139,7 +141,8 @@
     line-height: 0.77rem;
     color: #fff;
     font-size: 0.28rem;
-    margin-top:  0.45rem;
+    position: fixed;
+    bottom: 0;
   }
   .toast{
     width:3.75rem;

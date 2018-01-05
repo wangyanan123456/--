@@ -26,6 +26,7 @@
     background: #EFEFF4;
     text-align: left;
     padding-top: 1.23rem;
+    min-height: 88%;
    }
     .backto{
     color: #fff;
@@ -119,7 +120,9 @@
     line-height: 0.77rem;
     color: #fff;
     font-size: 0.28rem;
-    margin-top:  0.53rem;
+    position: fixed;
+    bottom: 0;
+
   }
   .toast{
     width:3.75rem;
