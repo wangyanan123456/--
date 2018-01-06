@@ -10,65 +10,61 @@
    		<!-- <li @click='change2' :class="{'bottom':todayActive2}"></li> -->
    </ul>
    <ul class="content" v-if='todayActive'>
-     <li >
-       <div class="felx">
-         <div class="left">
-           <div class="zhandian">71122(竞园店)</div>
-           <div class="palce">竞园艺术中心32C</div>
-           <div class="palce">宋先生 <span>18831241245</span></div>
-         </div>
-         <div class="right">
-           <div></div>
-         </div>
-       </div>
-       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
-     </li>
-
-      <li>
-       <div class="felx">
+    <li>
+      <a href="../../html/billList.html">
+        <div class="felx">
          <div class="left">
            <div class="zhandian">71133(竞园店)</div>
            <div class="palce">竞园艺术中心32C</div>
            <div class="palce">宋先生 <span>18831241245</span></div>
          </div>
-         <div class="right">
+         <div class="right2">
            <div></div>
          </div>
        </div>
        <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+      </a>
+       
      </li>
 
       <li>
-       <div class="felx">
+      <a href="../../html/billList.html">
+        <div class="felx">
          <div class="left">
-           <div class="zhandian">71155(竞园店)</div>
+           <div class="zhandian">71133(竞园店)</div>
            <div class="palce">竞园艺术中心32C</div>
            <div class="palce">宋先生 <span>18831241245</span></div>
          </div>
-         <div class="right">
+         <div class="right2">
            <div></div>
          </div>
        </div>
        <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+      </a>
+       
+     </li>
+
+      <li>
+      <a href="../../html/billList.html">
+        <div class="felx">
+         <div class="left">
+           <div class="zhandian">71133(竞园店)</div>
+           <div class="palce">竞园艺术中心32C</div>
+           <div class="palce">宋先生 <span>18831241245</span></div>
+         </div>
+         <div class="right2">
+           <div></div>
+         </div>
+       </div>
+       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+      </a>
+       
      </li>
    </ul>
    <ul class="content" v-if='todayActive2'>
-     <li >
-       <div class="felx">
-         <div class="left">
-           <div class="zhandian">71122(竞园店)</div>
-           <div class="palce">竞园艺术中心32C</div>
-           <div class="palce">宋先生 <span>18831241245</span></div>
-         </div>
-         <div class="right2">
-           <div></div>
-         </div>
-       </div>
-       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
-     </li>
-
-      <li>
-       <div class="felx">
+    <li>
+      <a href="../../html/billList.html">
+        <div class="felx">
          <div class="left">
            <div class="zhandian">71133(竞园店)</div>
            <div class="palce">竞园艺术中心32C</div>
@@ -79,12 +75,15 @@
          </div>
        </div>
        <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+      </a>
+       
      </li>
 
       <li>
-       <div class="felx">
+      <a href="../../html/billList.html">
+        <div class="felx">
          <div class="left">
-           <div class="zhandian">71155(竞园店)</div>
+           <div class="zhandian">71133(竞园店)</div>
            <div class="palce">竞园艺术中心32C</div>
            <div class="palce">宋先生 <span>18831241245</span></div>
          </div>
@@ -93,6 +92,24 @@
          </div>
        </div>
        <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+      </a>
+       
+     </li>
+      <li>
+      <a href="../../html/billList.html">
+        <div class="felx">
+         <div class="left">
+           <div class="zhandian">71133(竞园店)</div>
+           <div class="palce">竞园艺术中心32C</div>
+           <div class="palce">宋先生 <span>18831241245</span></div>
+         </div>
+         <div class="right2">
+           <div></div>
+         </div>
+       </div>
+       <div class="down">今日<span class='time'>09:00</span>前送达 订单金额<span class='price'>¥21.00</span></div>
+      </a>
+       
      </li>
    </ul>
   </div>
@@ -166,12 +183,12 @@ import { mapState } from 'vuex'
    .content{
     margin-left: 0.31rem;
    }
-   .content li{
+   .content  li{
     width:5.4rem;
     background: #fff;
     margin-bottom: 0.23rem;
    }
-   .felx{
+  .felx{
     display: flex;
     padding-left: 0.23rem;
     padding-bottom: 0.2rem;
@@ -225,6 +242,7 @@ import { mapState } from 'vuex'
     padding-top: 0.15rem;
     padding-bottom: 0.2rem;
     font-size: 0.22rem;
+    color: #333;
 
   }
 
