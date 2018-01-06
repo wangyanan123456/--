@@ -6,21 +6,21 @@
      <ul>
       <li class="one" @click.stop="naviTo({path: '/qiangdan2'})">
         <div class="img">
-          <img src="../assets/img/qd.png">
+          <img src="../assets/img/qd.png" class="oneimg">
         </div>
         <div>抢单</div>
       </li>
       <li class="two" @click.stop="naviTo({path: '/goodsback'})">
         <div class="img" >
-          <img src="../assets/img/tuihuo.png">
+          <img src="../assets/img/tuihuo.png" class="twoimg">
         </div>
         <div>商品退货</div>
       </li>
        <li class="two" @click.stop="naviTo({path: '/goodstuihuo'})">
         <div class="img">
-          <img src="../assets/img/pandian.png" >
+          <img src="../assets/img/pandian.png" class="twoimg">
         </div>
-        <div>商品盘点</div>
+        <div>商品回收</div>
       </li>
      </ul>
       
@@ -58,31 +58,48 @@ import { mapState } from 'vuex'
    .head{
    	padding-top: 1rem;
     width:100%;
-    height: 100%;
+    /*height: 110%;*/
     background: #EFEFF4;
     /*overflow: auto;*/
-   	height: 80vh;
+   	height: 84vh;
+   }
+   .one{
+     padding-top: 0.22rem;
+      height: 1.72rem;
+      margin-top: 0.25rem;
+   }
+   .two{
+    padding-top: 0.35rem;
+    height: 1.6rem;
+    margin-top: 0.25rem;
    }
    li{
-    width:5.23rem;
-    height: 1.88rem;
+    width:5.4rem;
+   
     background: #fff;
     margin:  0 auto;
-    padding-top: 0.22rem;
     border-radius: 0.1rem;
-    margin-top: 0.32rem;
+   
   }
   li div{
     width:100%;
     text-align: center;
   }
-  li img{
-    width:0.68rem;
-    height: 0.68rem;
+  .oneimg{
+    width:0.62rem;
+    height: 0.81rem;
+    background-size: 100% 100%;
     margin:0 auto;
     margin-bottom: 0.1rem;
   }
+ .twoimg{
+    width:0.55rem;
+    height: 0.55rem;
+    background-size: 100% 100%;
+    margin:0 auto;
+    margin-bottom: 0.15rem;
+  }
   li div{
-    font-size: 0.48rem;
+    font-size:0.38rem;
   }
 </style>

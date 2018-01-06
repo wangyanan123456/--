@@ -26,13 +26,14 @@ import { mapState } from 'vuex'
 .title{
 	
 	width:100%;
-	height: 1.0rem;
+	height: 1.05rem;
 	text-align: center;
-	line-height: 1rem;
+	line-height: 1.3rem;
 	font-size:0.3rem;
 	color: #fff;
 	background: -webkit-linear-gradient(top, #2C2D31, #101013);
 	opacity: 0.9;
+	font-weight: bold;
 }
 .hui{
 	width:100%;

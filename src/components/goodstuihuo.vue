@@ -9,30 +9,30 @@
      <li >
      <a href="../../html/goodshuishou.html">
         <div>
-          <img src="../assets/img/qd.png">
+          <img src="../assets/img/shop.png">
         </div>
         <div class="zhandian">小麦竞园店4</div>
-        <div class="detail">详情></div>
+        <div class="detail">回收 ></div>
      </a>
        
       </li>
       <li >
      <a href="../../html/goodshuishou.html">
         <div>
-          <img src="../assets/img/qd.png">
+          <img src="../assets/img/shop.png">
         </div>
         <div class="zhandian">小麦竞园店5</div>
-        <div class="detail">详情></div>
+        <div class="detail">回收 ></div>
      </a>
        
       </li>
       <li >
      <a href="../../html/goodshuishou.html">
         <div>
-          <img src="../assets/img/qd.png">
+          <img src="../assets/img/shop.png">
         </div>
         <div class="zhandian">小麦竞园店6</div>
-        <div class="detail">详情></div>
+        <div class="detail">回收 ></div>
      </a>
        
       </li>
@@ -66,8 +66,10 @@ import { mapState } from 'vuex'
 
 <style scoped>
    .head{
-   	padding-top: 1.23rem;
-   	/*height: 80vh;*/
+    padding-top: 1.23rem;
+    height: 81vh;
+    background: #EFEFF4;
+    width:100%;
    }
    li a{
     display: flex;
@@ -77,17 +79,20 @@ import { mapState } from 'vuex'
     font-size: 0.31rem;
     color: #333;
     border-bottom: 1px solid #E5E5E5;
+    background: #fff;
    }
    img{
-    width:0.39rem;
-    height: 0.5rem;
-    margin-top: 0.23rem;
+    width:0.38rem;
+    height: 0.38rem;
+    background-size: 100% 100%;
+    margin-top: 0.26rem;
     margin-left: 0.23rem;
     margin-right: 0.14rem;
    }
    .detail{
     color:#999;
     margin-left: 1.5rem;
+    font-size: 0.27rem;
    }
    .zhandian{
     width:2.5rem;
@@ -95,7 +100,7 @@ import { mapState } from 'vuex'
    }
    .backto{
     position: fixed;
-    top:0.13rem;
+    top:0.25rem;
     z-index: 1000;
     color: #fff;
     display: flex;
@@ -106,7 +111,7 @@ import { mapState } from 'vuex'
     background-size: 100% 100%;
    }
    .backto div{
-    margin-top: 0.25rem;
+    margin-top: 0.26rem;
     font-size: 0.25rem;
    }
  

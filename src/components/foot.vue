@@ -45,10 +45,11 @@
       position: fixed;
       bottom: 0rem;
       font-size: 0.2rem;
-      background: #fff;
+      background:#fff;
       height: 0.7rem; 
       padding-top: 0.07rem;
-      width:100%;     
+      width:100%; 
+      border-top: 1px solid #e7e7e7;    
     }
   .footer ul{
     display: flex;
@@ -58,21 +59,21 @@
     margin-right: 0.7rem;
   }
   .footer p{
-   font-size: 0.17rem;
+   font-size: 0.16rem;
   }
   
   .img1{
    background: url('../assets/img/foot11.png') ;
     background-size: 100% 100%;
     height: 0.38rem;
-    width:0.34rem;
+    width:0.38rem;
     margin: 0 auto;
   }
   .img2{
     background: url('../assets/img/foot22.png') ;
     background-size: 100% 100%;
     height: 0.38rem;
-    width:0.34rem;
+    width:0.38rem;
     margin: 0 auto;
 
   }
@@ -80,7 +81,7 @@
     background: url('../assets/img/foot33.png') ;
     background-size: 100% 100%;
     height: 0.38rem;
-    width:0.34rem;
+    width:0.38rem;
     margin: 0 auto;
 
   }
@@ -88,14 +89,14 @@
    background: url('../assets/img/foot1.png') ;
     background-size: 100% 100%;
     height: 0.38rem;
-    width:0.34rem;
+    width:0.38rem;
     margin: 0 auto;
   }
   .img5{
     background: url('../assets/img/foot2.png') ;
     background-size: 100% 100%;
     height: 0.38rem;
-    width:0.34rem;
+    width:0.38rem;
     margin: 0 auto;
 
   }
@@ -103,7 +104,7 @@
     background: url('../assets/img/foot3.png') ;
     background-size: 100% 100%;
     height: 0.38rem;
-    width:0.34rem;
+    width:0.38rem;
     margin: 0 auto;
 
   }

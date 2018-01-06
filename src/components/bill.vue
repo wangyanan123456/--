@@ -144,11 +144,11 @@ import { mapState } from 'vuex'
    	background:#101013;
    	opacity: 0.9;
    	position: fixed;
-   	top:1rem;
+   	top:1.05rem;
    	z-index: 1000;
    }
    .title li{
-   	height: 0.35rem;
+   	height: 0.36rem;
    	border-right:1px solid #fff;
    	line-height: 0.41rem;
    	width:2.91rem;
@@ -174,10 +174,13 @@ import { mapState } from 'vuex'
    .felx{
     display: flex;
     padding-left: 0.23rem;
-    padding-bottom: 0.16rem;
+    padding-bottom: 0.2rem;
+
+    border-bottom: 1px solid #e5e5e5;
    }
    .left{
     width:3.12rem;
+
    }
   .zhandian{
     margin-top: 0.23rem;
@@ -202,7 +205,7 @@ import { mapState } from 'vuex'
     text-align: center;
     font-size: 15px;
     color: #fff;
-    margin-left: 0.6rem;
+    margin-left: 0.8rem;
     margin-top: 0.25rem;
   }
   .right2 div{
@@ -214,15 +217,17 @@ import { mapState } from 'vuex'
     text-align: center;
     font-size: 15px;
     color: #fff;
-    margin-left: 0.6rem;
+    margin-left: 0.8rem;
     margin-top: 0.25rem;
   }
   .down{
-    padding-left: 0.23rem;
-    padding-bottom: 0.22rem;
+     padding-left: 0.23rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.2rem;
     font-size: 0.22rem;
-    margin-top: 0.27rem;
+
   }
+
   .time{
     display: inline-block;
     color: red;
@@ -234,7 +239,9 @@ import { mapState } from 'vuex'
     margin:0 auto;
   }
   .bottom{
-	border-bottom: 1px solid #fff;
+    /*font-weight: bold;*/
+	border-bottom: 2px solid #fff;
+
 	}
 	
  

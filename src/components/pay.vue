@@ -21,7 +21,7 @@
      <li>
 	     <div class="top">
 	     	<div>
-	          <img src="../assets/img/qd.png">
+	          <img src="../assets/img/shop.png">
 	        </div>
 	        <div class="zhandian">小麦竞园店</div>
 	        <div class="detail">付款</div>
@@ -39,25 +39,26 @@
 	     	 <div class="pay" style="border-bottom: 1px solid #e5e5e5;padding-bottom: 0.16rem" >本次退货<span style='color:red'>-￥100.00元</span></div>
 	     	 <div class="pay2" >本次实付<span>￥100.00元</span></div>
 	     	 <div>
-	     	 	<img src="../assets/img/pay.png">
+	     	 	<img src="../assets/img/pay.png" >
 	     	 </div>
 	     	 <div class="payText">微信或支付宝扫码付款</div>
 	     	<div class="top2" @click='money'>
 		     	<div class="qd">
 		          <img src="../assets/img/moneyPay.png">
 		        </div>
-		        <div class="">使用现金支付</div>
+		        <div >使用现金支付</div>
 		        <div class="down2">
 		        	<img src="../assets/img/paying.png" >
 		        </div> 
 	     	</div>
+        <div class="lastdown"></div>
 	     </div>
         
       </li>
       <li>
 	     <div class="top">
 	     	<div>
-	          <img src="../assets/img/qd.png">
+	          <img src="../assets/img/shop.png">
 	        </div>
 	        <div class="zhandian">小麦竞园店</div>
 	        <div class="detail">付款</div>
@@ -74,7 +75,7 @@
       <li>
 	     <div class="top">
 	     	<div>
-	          <img src="../assets/img/qd.png">
+	          <img src="../assets/img/shop.png">
 	        </div>
 	        <div class="zhandian">小麦竞园店</div>
 	        <div class="detail">付款</div>
@@ -158,7 +159,7 @@ import { mapState } from 'vuex'
   		height: 100vh;
   		background: #000;
   		opacity: 0.75;
-		position: absolute;
+		  position: absolute;
 		/*top:10px;*/
 		z-index: 2000;
 		top:-0.01rem;
@@ -166,6 +167,8 @@ import { mapState } from 'vuex'
    .head{
    	padding-top: 1.23rem;
    	text-align: left;
+    background: #EFEFF4;
+    min-height: 81vh;
    }
    li{
     width:100%;
@@ -173,17 +176,21 @@ import { mapState } from 'vuex'
     font-size: 0.31rem;
     color: #333;
     border-bottom: 1px solid #E5E5E5;
+    background: #fff;
+    /*border: 1px solid blue;*/
    }
   .top{
   	display: flex;
   	width:100%;
+    height: 57px;
   }
   .top img{
-    width:0.39rem;
-    height: 0.5rem;
-    margin-top: 0.23rem;
+    width:0.38rem;
+    height: 0.38rem;
+    margin-top: 0.28rem;
     margin-left: 0.23rem;
     margin-right: 0.14rem;
+    /*border:1px solid red;*/
    }
    .detail{
     color:#999;
@@ -203,9 +210,10 @@ import { mapState } from 'vuex'
    }
    .show{
    	text-align: left;
+    /*margin-top: -0.15rem;*/
    }
    .pay,.pay2{
-   	font-size: 0.22rem;
+   	font-size: 14px;
    	color:#666;
    	height: 0.39rem;
    	line-height: 0.39rem;
@@ -225,24 +233,29 @@ import { mapState } from 'vuex'
    	margin-top: 0.16rem;
    }
    .show img{
-   	width:2.34rem;
-   	height: 2.34rem;
-   	margin: 0.16rem auto;
+   	width:2.39rem;
+   	height: 2.39rem;
+   	margin: 0.12rem auto;
    }
    .payText{
    	text-align: center;
-   	font-size: 0.22rem;
+   	font-size: 14px;
    	color:#666;
    	line-height: 0.31rem;
    	margin-bottom: 0.08rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 0.09rem;
    }
    .top2{
    	display: flex;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    margin-top: -0.1rem;
    }
    .qd img{
-   	 width:0.39rem;
-    height: 0.5rem;
-    margin-top: 0.23rem;
+   	width:0.31rem;
+    height: 0.33rem;
+    margin-top: 0.16rem;
     margin-left: 0.23rem;
     margin-right: 0.14rem;
    }
@@ -252,8 +265,12 @@ import { mapState } from 'vuex'
    .down2 img{
    	width:0.25rem;
    	height: 0.2rem;
-   	margin-top:0.4rem;
+   	margin-top:0.3rem;
 
+   }
+   .lastdown{
+    height: 0.15rem;
+    background:#EFEFF4 100%;
    }
    .toast{
     width:3.75rem;
@@ -271,17 +288,18 @@ import { mapState } from 'vuex'
     left: 1.2rem;
    }
    .money{
-    width:3.91rem;
-    height: 3.4rem;
+    width:4.7rem;
+    height: 3.5rem;
     position: absolute;
-    top:2.58rem;
-    left: 1.03rem;
+    top:3.7rem;
+    left: 0.68rem;
     z-index: 3000;
    }
    .paying{
-   	width:3.91rem;
+   	width:4.7rem;
+
    	height: 0.91rem;
-   	background: #5B8CFF;
+   	background:url('../assets/img/pao.png') no-repeat;
    	font-size: 0.34rem;
    	line-height: 0.91rem;
    	text-align: center;
@@ -289,36 +307,41 @@ import { mapState } from 'vuex'
    	border-radius: 0.11rem 0.11rem 0 0;
    }
    .bottom{
-   	width:3.91rem;
-   	height: 2.38rem;
+   	 width:4.68rem;
+   	height: 2.5rem;
    	background: #fff;
    	border-radius: 0 0 0.11rem 0.11rem;
    }
    .bottom input{
-   	width:2rem;
-   	height: 0.69rem;
+   	width:1.5rem;
+   	height: 0.39rem;
+    line-height: 0.29rem;
    	border:none;
    	font-size: 0.27rem;
-   	margin-top: 0.41rem;
-    /*border:1px solid red;*/
+   	margin-top: 0.8rem;
+    border-bottom:1px solid #e5e5e5;
+    padding-bottom: -0.1rem;
    }
    .sure{
-   	width: 1.7rem;
+   	width: 1.9rem;
    	height: 0.67rem;
-   	margin: 0.38rem auto;
+   	margin-left: 0.15rem;
+    margin-top: 0.39rem;
    	background: #5B8CFF;
-  	font-size: 0.34rem;
+  	font-size: 0.28rem;
   	color: #fff;
   	text-align: center;
   	line-height: 0.67rem;
   	border-radius: 0.06rem;
+    /*margin-right: 0.2rem;*/
    }
    .esc{
-    width: 1.7rem;
+    width: 1.9rem;
     height: 0.67rem;
-    margin: 0.38rem auto;
+    margin-left: 0.4rem;
+    margin-top: 0.38rem;
     background: #E5E5E5;
-    font-size: 0.38rem;
+    font-size: 0.28rem;
     color: #999;
     text-align: center;
     line-height: 0.67rem;
@@ -327,6 +350,10 @@ import { mapState } from 'vuex'
    .speak{
     width:70%;
     padding-left: 30%;
+    font-size: 0.34rem;
+   }
+   .payImg{
+
    }
 
 </style>
