@@ -55,7 +55,7 @@ $(document).ready(function(){
         count++   
       }
     })
-    if(count>0 || $textarea.length<3 || $textarea.length>200){
+    if(count>0 || $textarea.length<3 || $textarea.length>200 ){
       $('.toast').text('提交失败')
       toast()
     }else{
