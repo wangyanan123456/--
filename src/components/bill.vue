@@ -170,11 +170,12 @@ import { mapState } from 'vuex'
    	line-height: 0.41rem;
    	width:2.91rem;
    	font-size: 0.28rem;
-   	color:#fff;
+   	color:#999;
    	text-align: center;
+
    }
    .title div{
-   		width:0.84rem;
+   		width:1rem;
    		margin: 0 auto;
    }
    .title li:last-child{
@@ -259,6 +260,8 @@ import { mapState } from 'vuex'
   .bottom{
     /*font-weight: bold;*/
 	border-bottom: 2px solid #fff;
+  color:#fff;
+  font-weight: bold;
 
 	}
 	
