@@ -55,8 +55,8 @@
     display: flex;
   }
   .footer li{
-    margin-left: 0.8rem;
-    margin-right: 0.6rem;
+    margin-left: 0.75rem;
+    margin-right: 0.7rem;
   }
   .footer p{
    font-size: 0.16rem;
