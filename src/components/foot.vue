@@ -56,7 +56,7 @@
   }
   .footer li{
     margin-left: 0.8rem;
-    margin-right: 0.7rem;
+    margin-right: 0.6rem;
   }
   .footer p{
    font-size: 0.16rem;
